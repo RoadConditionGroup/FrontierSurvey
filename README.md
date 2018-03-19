@@ -3,22 +3,28 @@
 
 ### 环境配置
 clone仓库：
-`git clone https://github.com/RoadConditionGroup/FrontierSurvey.git`
+```
+git clone https://github.com/RoadConditionGroup/FrontierSurvey.git
+```
 
 提交：
-`git add .`
+```
+git add .
+git commit -m 'comments'
+git push
+```
 
-`git commit -m 'comments'`
-
-`git push`
-
-提交可能会失败，需要在github上添加ssh-key [地址](https://github.com/settings/keys)
+**首次提交需要在github上添加ssh-key** [地址](https://github.com/settings/keys)
 
 ssh-key生成方法
-`ssh-keygen -t rsa -C 'yourRTX@tencent.com'`
+```
+ssh-keygen -t rsa -C 'yourRTX@tencent.com'
+```
 
-公司内需要设置代理，配置文件
-`C:\Users\jensonjiang\.ssh\config`
+**公司内需要设置代理**，配置文件
+```
+C:\Users\jensonjiang\.ssh\config
+```
 
 配置文件内容举例：
 ```
@@ -44,6 +50,8 @@ Host github2.com
 ```
 
 然后修改push地址，方法为
-`git remote set-url origin github2:RoadConditionGroup/FrontierSurvey.git`
+```
+git remote set-url origin github2:RoadConditionGroup/FrontierSurvey.git
+```
 
 详情可以参考[网址](https://www.webmaster.me/uncategorized/add-multiple-ssh-keys-on-github.html)
